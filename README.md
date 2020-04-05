@@ -1,7 +1,7 @@
 A simple neural network for multi-class classification on images represented in RGB
 (based on CIFAR-10, also works on other datasets)
 
-
+<p>&nbsp;</p>
 Q. What makes this project different?
 
 A. This repository includes a preprocessing unit that handles real images; 
