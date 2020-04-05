@@ -5,10 +5,10 @@ A simple neural network for multi-class classification on images represented in 
 Q. What makes this project different?
 
 A. This repository includes a preprocessing unit that handles real images; 
-    
-    it is possible to import directly by importing from keras: 'keras.datasets.cifar10',
-    
-    this repository is made to also suit other datasets which requires preprocessing before training.
+
+it is possible to import directly by importing from keras: 'keras.datasets.cifar10',
+
+this repository is made to also suit other datasets which requires preprocessing before training.
 
 
 Note:
@@ -38,6 +38,8 @@ Pillow==6.1.0
 numpy==1.18.1
 
 
+
+
 Example of a run (in order):
 
 python preprocess_data.py -r cifar_10_dataset/train -ox outputs/trainx.npy -oy outputs/trainy.npy -p 10
@@ -52,4 +54,5 @@ outputs/testy.npy -w outputs/res_weights.h5
 python predictor.py -m outputs/cnn_example.json -w outputs/res_weights.h5 -x outputs/testx.npy -y outputs/testy.npy -o outputs/result
 
 OR try this sample run (on cifar-10 data included in the repository):
+
 python example_wrapper.py
