@@ -1,16 +1,16 @@
-A simple neural network for multi-class classification on images represented in RGB
-(based on CIFAR-10, also works on other datasets)
+<b>A simple neural network for multi-class classification on images represented in RGB
+(based on CIFAR-10, also works on other datasets)</b>
 
 <p>&nbsp;</p>
 Q. What makes this project different?
-
+<p>&nbsp;</p>
 A. This repository includes a preprocessing unit that handles real images; 
 
 it is possible to import directly by importing from keras: 'keras.datasets.cifar10',
 
 this repository is made to also suit other datasets which requires preprocessing before training.
 
-
+<p>&nbsp;</p>
 Note:
 
 For preprocessing purposes, the data needs to be sorted in:
@@ -24,7 +24,7 @@ there are directory with labels which have raw image data (which belong in that 
 (python preprocess.py -r cifar_10_dataset/train is a working command which illustrates this)
 
 
-
+<p>&nbsp;</p>
 Major libraries and versions used to build this project:
 
 Python==3.6.8
@@ -39,7 +39,7 @@ numpy==1.18.1
 
 
 
-
+<p>&nbsp;</p>
 Example of a run (in order):
 
 python preprocess_data.py -r cifar_10_dataset/train -ox outputs/trainx.npy -oy outputs/trainy.npy -p 10
@@ -52,7 +52,7 @@ python training.py -m outputs/cnn_example.json -x outputs/trainx.npy -y outputs/
 outputs/testy.npy -w outputs/res_weights.h5
 
 python predictor.py -m outputs/cnn_example.json -w outputs/res_weights.h5 -x outputs/testx.npy -y outputs/testy.npy -o outputs/result
-
+<p>&nbsp;</p>
 OR try this sample run (on cifar-10 data included in the repository):
 
 python example_wrapper.py
